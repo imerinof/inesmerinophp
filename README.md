@@ -1,14 +1,28 @@
-# PHP Hello World Sample
+# php-getting-started
 
-This application demonstrates a simple, reusable PHP web application.
+A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/php-helloworld)
+This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
 
-## Run the app locally
+## Deploying
 
-1. Download and extract [PHP][]
-+ cd into this project's root directory
-+ Run `php -S localhost:8000` to start the app using the built-in development web server
-+ Access the running app in a browser at <http://localhost:8000>
+Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
-[PHP]: http://php.net/downloads.php
+```sh
+$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
+$ cd php-getting-started
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Documentation
+
+For more information about using PHP on Heroku, see these Dev Center articles:
+
+- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
+- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
